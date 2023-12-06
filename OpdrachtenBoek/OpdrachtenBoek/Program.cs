@@ -1,10 +1,21 @@
-﻿namespace OpdrachtenBoek;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class Program
+namespace OpdrachtenBoek
 {
-    void Main(string[] args)
+    internal class Program
     {
-        Console.WriteLine("test");
+        public void Main(string[] args)
+        {
+            Console_Schrijven console_schrijven = new Console_Schrijven();
+            console_schrijven.Opdracht1();
+        }
+
     }
+
 }
+
 
