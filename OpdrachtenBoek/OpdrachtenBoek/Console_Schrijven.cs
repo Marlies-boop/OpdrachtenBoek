@@ -18,32 +18,46 @@ namespace OpdrachtenBoek
         public void Opdracht2()
         {
             // 2.Gebruik drie keer achter elkaar Console.Write om “Hello World!” naar het scherm te schrijven. 
-
+            Console.Write("Hello World!");
+            Console.Write("Hello World!");
+            Console.Write("Hello World!");
         }
         public void Opdracht3()
         {
             // 3.Wat is het verschil? Zet je antwoord in een regel commentaar. 
-
+            //Bij opdracht 1 wordt op elke nieuwe regel een "Hello World!" neergezet
+            //en in opdracht 2 wordt alles achter elkaar gezet.
         }
         public void Opdracht4()
         {
             // 4.Gebruik Console.BackgroundColor om de achtergrondkleur van je console te veranderen. Gebruik hierna een Console.WriteLine om dit te laten zien. 
-
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.WriteLine("Deze tekst heeft een groene achtergrond.");
         }
         public void Opdracht5()
         {
             // 5.Gebruik Console.ForegroundColor om de tekstkleur van je console te veranderen. Gebruik hierna een Console.WriteLine om dit te laten zien. 
-
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Deze tekst is rood.");
         }
         public void Opdracht6()
         {
             // 6.Schrijf een stukje code dat “Hello World” naar het scherm schrijft met voor beide woorden een andere BackgroundColor en ForegroundColor. De tekst moet op één regel staan. 
-
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("Deze tekst heeft een blauwe achtergrond en groene tekst.");
         }
         public void Opdracht7()
         {
-            // 7.** Schrijf een functie met als parameters twee kleuren en een string. Deze functie schrijft de string tekst weg naar de console met de opgegeven kleuren en reset daarna de kleuren. 
-
+            // 7.** Schrijf een functie met als parameters twee kleuren en een string.
+            // Deze functie schrijft de string tekst weg naar de console met de opgegeven kleuren
+            // en reset daarna de kleuren. 
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("deze tekst is blauw.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("deze tekst is rood.");
+            Console.ResetColor();
+            Console.WriteLine("deze tekst is normaal.");
         }
     }
 }
