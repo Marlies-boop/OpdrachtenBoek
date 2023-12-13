@@ -11,13 +11,13 @@ namespace OpdrachtenBoek
     {
         public static void Main(string[] args)
         {
-            BasisVariabelen();
+            Casting_En_Conversie();
         }
 
         public static void ConsoleSchrijven()
         {
             Console_Schrijven console_schrijven = new Console_Schrijven();
-            console_schrijven.Opdracht7();
+            console_schrijven.Opdracht6();
         }
 
         public static void ConsoleLezen()
@@ -30,6 +30,18 @@ namespace OpdrachtenBoek
         {
             Basis_Variabelen basis_variabelen = new Basis_Variabelen();
             basis_variabelen.Opdracht20();
+        }
+
+        public static void Bewerkingen_Met_Variabelen()
+        {
+            Bewerkingen_Met_Variabelen bewerkingen_met_variabelen = new Bewerkingen_Met_Variabelen();
+            bewerkingen_met_variabelen.Opdracht35Tot38();
+        }
+
+        public static void Casting_En_Conversie()
+        {
+            Casting_En_Conversie casting_en_conversie = new Casting_En_Conversie();
+            casting_en_conversie.Opdracht42En43();
         }
     }
 }

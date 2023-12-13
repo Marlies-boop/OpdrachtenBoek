@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,17 +16,22 @@ namespace OpdrachtenBoek
         public char charVariabel = 'a';
         public float floatVariabel = 5f;
         public bool boolVariabel = false;
-        // 18.Geef 2 van deze 5 variabelen een nieuwe waarde. 
-        // Ik heb de int van 5 naar 10 gemaakt en ik heb de bool op false gezet ipv true.
+        public void Opdracht18()
+        {
+            // 18.Geef 2 van deze 5 variabelen een nieuwe waarde. 
+            boolVariabel = true;
+            intVariabel = 5;
+        }
+
         // 19.Declareer een nieuwe int variabele. 
         public int intVariabel2 = 5;
         public void Opdracht20()
         {
             // 20.Schrijf deze variabele naar de console. 
-            Convert.ToString(intVariabel2);
             Console.WriteLine(intVariabel2);
         }
+
         // 21.Wat gebeurt er? Waarom gebeurt dit? Zet je antwoord in een regel commentaar.  
-        // 
+        // hij schrijft 5 naar de console, dit kan omdat een string alle karakters kan gebruiken.
     }
 }
