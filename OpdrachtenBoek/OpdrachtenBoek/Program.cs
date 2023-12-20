@@ -41,7 +41,7 @@ namespace OpdrachtenBoek
         public static void Casting_En_Conversie()
         {
             Casting_En_Conversie casting_en_conversie = new Casting_En_Conversie();
-            casting_en_conversie.Opdracht42En43();
+            casting_en_conversie.Opdracht48();
         }
     }
 }
