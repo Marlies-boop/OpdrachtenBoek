@@ -73,9 +73,25 @@ namespace OpdrachtenBoek
             Console.WriteLine(result);
         }
 
-        //49. ** Laat de gebruiker een stuk tekst invoeren, sla dit op in een string variabele. Gebruik TryParse om 
-        // dit om te zetten in een int. Als dit lukt dan moet je programma aan de gebruiker teruggeven dat hij 
-        // het goed gedaan heeft, anders moet je programma aan de gebruiker teruggeven dat hij het niet 
-        // goed gedaan heeft.
+        public void Opdracht49()
+        {
+            //49. ** Laat de gebruiker een stuk tekst invoeren
+            //sla dit op in een string variabele.
+            //Gebruik TryParse om dit om te zetten in een int.
+            //Als dit lukt dan moet je programma aan de gebruiker teruggeven dat hij het goed gedaan heeft
+            //anders moet je programma aan de gebruiker teruggeven dat hij het niet goed gedaan heeft.
+            string gebruikerInput;
+            Console.WriteLine("Schrijf wat teskt.");
+            gebruikerInput = Console.ReadLine();
+            bool tryParseBool = Int32.TryParse(gebruikerInput, out int intWaarde);
+            if (tryParseBool)
+            {
+                Console.WriteLine("Je hebt het goed gedaan.");
+            }
+            else
+            {
+                Console.WriteLine("Je hebt het niet goed gedaan.");
+            }
+        }
     }
 }
