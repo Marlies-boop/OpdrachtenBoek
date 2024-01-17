@@ -11,7 +11,7 @@ namespace OpdrachtenBoek
     {
         public static void Main(string[] args)
         {
-            Beslissingen();
+            Arrays();
         }
 
         public static void ConsoleSchrijven()
@@ -53,7 +53,7 @@ namespace OpdrachtenBoek
         public static void Arrays()
         {
             Arrays arrays = new();
-
+            arrays.Opdracht64();
         }
     }
 }
