@@ -53,7 +53,7 @@ namespace OpdrachtenBoek
         public static void Arrays()
         {
             Arrays arrays = new();
-            arrays.Opdracht64();
+            arrays.Opdracht61();
         }
     }
 }

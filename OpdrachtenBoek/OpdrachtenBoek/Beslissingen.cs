@@ -62,8 +62,7 @@ namespace OpdrachtenBoek
             //Schrijf een switch-statement dat de gebruikersinvoer vergelijkt met alle opties van 1 t/m 12
             //en geef de gebruiker in de console terug welke maandnaam hierbij hoort.
             Console.WriteLine("geef een getal van 1 t/m 12.");
-            string gebruikerInputString = Console.ReadLine();
-            int gebruikerInput = int.Parse(gebruikerInputString);
+            int gebruikerInput = int.Parse(Console.ReadLine());
             switch (gebruikerInput)
             {
                 case 1:
@@ -128,6 +127,9 @@ namespace OpdrachtenBoek
         enum Moves {heal, attack, flee}
         public void Opdracht57()
         {
+            Moves myHeal = Moves.heal;
+            Moves myAttack = Moves.attack;
+            Moves myFlee = Moves.flee;
             //57. ** Declareer een enum Moves die minstens drie verschillende moves van het karakter van de
             //gebruiker bevat. (bv: heal, attack, flee).
             //Schrijf de keuzes voor de gebruiker naar de console en vraag de gebruiker om een van de opties.
@@ -140,20 +142,23 @@ namespace OpdrachtenBoek
             Console.WriteLine("2: attack");
             Console.WriteLine("3: flee");
 
-            string gebruikerInput;
-            gebruikerInput = Console.ReadLine();
-            bool tryParseBool = Int32.TryParse(gebruikerInput, out int intWaarde);
+            //string gebruikerInput;
+            //gebruikerInput = Console.ReadLine();
+            bool tryParseBool = Int32.TryParse(Console.ReadLine(), out int intWaarde);
             if (tryParseBool)
             {
                 switch (intWaarde)
                 {
                     case 1:
+                        myHeal = Moves.heal;
                         Console.WriteLine("You healed.");
                         break;
                     case 2:
+                        myAttack = Moves.attack;
                         Console.WriteLine("You attacked.");
                         break;
                     case 3:
+                        myFlee = Moves.flee;
                         Console.WriteLine("You ran away.");
                         break;
                     default:

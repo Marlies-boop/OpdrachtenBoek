@@ -25,6 +25,7 @@ namespace OpdrachtenBoek
         //Print vervolgens de waarden van de array naar de console.
         public void Opdracht59()
         {
+            Console.WriteLine("Geef 10 waardes.");
             string[] stringArray = new string[10];
             for(int i = 0; i < stringArray.Length; i++)
             {
@@ -40,7 +41,7 @@ namespace OpdrachtenBoek
         {
             double[] doubleArray = {1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5};
             double som = doubleArray.Sum();
-            double gemiddelde = som / 8.0;
+            double gemiddelde = som / doubleArray.Length;
             Console.WriteLine(gemiddelde);
         }
 
@@ -55,8 +56,9 @@ namespace OpdrachtenBoek
             {
                 doubleArray[i] = double.Parse(Console.ReadLine());
                 som = doubleArray.Sum();
+                //Console.WriteLine(doubleArray[i]);
             }
-            Console.WriteLine(som);
+            Console.WriteLine(som.ToString("F1"));
         }
 
         //62. Maak een array van 6 strings aan en vraag de gebruiker om de waarden in te voeren.
